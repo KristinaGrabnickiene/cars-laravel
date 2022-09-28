@@ -85,13 +85,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <a href="http://localhost/Laravel/cars-laravel/public/cars">Mašinos</a>
+                <a href="http://localhost/Laravel/cars-laravel/public/owners">Savininkai</a>
+                <a href="http://localhost/Laravel/cars-laravel/public/cars/2">Mašinu modelis</a>
+                <a href="http://localhost/Laravel/cars-laravel/public/create">Pridėti mašiną</a>
+                <a href="http://localhost/Laravel/cars-laravel/public/owners/create">Pridėti savininką</a>
                 </div>
             </div>
         </div>
