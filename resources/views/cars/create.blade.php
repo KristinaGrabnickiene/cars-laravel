@@ -3,8 +3,9 @@
 
 @section('content')
 
-<div class="container">
 
+<div class="container">
+    
     {{-- Klaidu isvedimas pagal laravelio validatoriu--}}
        @if ($errors->any())
             <div class="alert alert-danger">
@@ -15,7 +16,9 @@
                 </ul>
             </div>
         @endif
-<form method="post" action= "{{ route('cars.store') }}" enctype="multipart/form-data"> //multipart naudojama failams ikelti
+
+{{--multipart/form-data - naudojama failams ikelti--}}
+<form method="post" action= "{{ route('cars.store') }}" enctype="multipart/form-data"> 
 
  <input type="hidden" name ="userId" value=''>
  {{ csrf_field()}}

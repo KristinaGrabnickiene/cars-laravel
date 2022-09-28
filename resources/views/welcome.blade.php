@@ -85,11 +85,11 @@
                 </div>
 
                 <div class="links">
-                <a href="http://localhost/Laravel/cars-laravel/public/cars">Mašinos</a>
-                <a href="http://localhost/Laravel/cars-laravel/public/owners">Savininkai</a>
+                <a href="{{ route('cars.index') }}" > Mašinos</a>
+                <a href="{{ route('owners.index') }}" >Savininkai</a>
                 <a href="http://localhost/Laravel/cars-laravel/public/cars/2">Mašinu modelis</a>
-                <a href="http://localhost/Laravel/cars-laravel/public/create">Pridėti mašiną</a>
-                <a href="http://localhost/Laravel/cars-laravel/public/owners/create">Pridėti savininką</a>
+                <a href="{{ route('cars.create') }}" > Pridėti mašiną</a>
+                <a href="{{ route('owners.create') }}" >Pridėti savininką</a>
                 </div>
             </div>
         </div>
