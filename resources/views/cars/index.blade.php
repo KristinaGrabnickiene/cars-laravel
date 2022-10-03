@@ -5,11 +5,14 @@
 <div class="container">
 
  <h5> Viso mašinų yra: {{ $cars->count() }} </h5>
- <p> testas</p>
+@guest
+@else
+ <!-- @if(Auth::user()->role == "admin") -->
  <a href="{{ route('cars.create') }}">
     <button  type="button" class="btn btn-dark btn-lg">Sukurti naują mašinos įrašą </button>
 				</a> 
-
+<!-- @endif -->
+@endguest
                 <br>
                 <br>
         <div class="row">

@@ -71,7 +71,6 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
@@ -87,7 +86,7 @@
                 <div class="links">
                 <a href="{{ route('cars.index') }}" > Mašinos</a>
                 <a href="{{ route('owners.index') }}" >Savininkai</a>
-                <a href="http://localhost/Laravel/cars-laravel/public/cars/2">Mašinu modelis</a>
+                <a href="{{route ('cars.show', 2 )}}">Mašinu modelis</a>
                 <a href="{{ route('cars.create') }}" > Pridėti mašiną</a>
                 <a href="{{ route('owners.create') }}" >Pridėti savininką</a>
                 </div>
