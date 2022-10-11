@@ -10,10 +10,12 @@
 <h5> Viso yra: {{ $owners->count() }} </h5>
 @guest
 @else
- <!-- @if(Auth::user()->role == "admin") -->
- <a href="{{ route('owners.create')}}"><button  type="button" class="btn btn-dark btn-lg"> 
-                
-     
+ @if(Auth::user()->role == "admin")
+    <a href="{{ route('owners.create')}}"><button  type="button" class="btn btn-dark btn-lg"> 
+        Sukurti naują </button>
+    </a>
+@endif
+@endguest 
         <div class="row">
             <div class="col-3">
                     Rikiuoti pagal :   
@@ -61,6 +63,7 @@
          @endif
 	</tr>
 	@endforeach
+    
 </table>
 
 {{ $owners->links() }}
